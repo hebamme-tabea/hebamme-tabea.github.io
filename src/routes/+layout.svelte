@@ -33,7 +33,7 @@
 	}
 
 	.nav {
-		padding: 0.5rem 0.8rem;
+		padding: 0.4rem 1rem;
 		position: relative;
 		font-size: 20px;
 	}

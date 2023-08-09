@@ -1,15 +1,12 @@
-<div class="nav">test nav</div>
+<script>
+</script>
 
-<div class="main">
-	<slot />
-</div>
+<div class="header">test</div>
+
+<slot />
 
 <style>
-	.nav {
+	.header {
 		color: green;
-	}
-
-	.main {
-		margin-top: 10px;
 	}
 </style>

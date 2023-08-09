@@ -1,16 +1,17 @@
-<script>
+<script lang="ts">
+	import { base } from '$app/paths';
 	//Das Mutter-Sein ist etwas völlig Neues.
 </script>
 
 <div class="grey-box" />
 <div class="grid">
-	<img src="profilbild.jpeg" alt="profile" class="profile-img" />
+	<img src="{base}/profilbild.jpeg" alt="profile" class="profile-img" />
 	<div class="text-section">
 		<div class="name">TABEA KLEINE</div>
 		<div class="profession">Hebamme</div>
-		<img src="logo.svg" alt="logo" class="logo" />
+		<img src="{base}/logo.svg" alt="logo" class="logo" />
 		<div class="quote">
-			<img src="quote-bg.png" alt="quote" class="quote-background" />
+			<img src="{base}/quote-bg.png" alt="quote" class="quote-background" />
 			<div class="quote-body">
 				In dem Moment, in dem ein Kind geboren wird, wird auch eine Mutter geboren. Die Frau hat
 				vorher schon existiert, jedoch nicht als Mutter. Die Mutter ist genauso neu wie das Kind.

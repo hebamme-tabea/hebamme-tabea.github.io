@@ -1,14 +1,15 @@
-<script>
+<script lang="ts">
+	import { base } from '$app/paths';
 </script>
 
 <div class="header">
-	<a href="/">
-		<img src="logo.svg" alt="logo" class="logo" />
+	<a href="{base}/about">
+		<img src="{base}/logo.svg" alt="logo" class="logo" />
 	</a>
 	<div />
-	<a href="/" class="nav">home</a>
-	<a href="about" class="nav">about me</a>
-	<a href="contact" class="nav">contact</a>
+	<a href="{base}/about" class="nav">home</a>
+	<a href="{base}/about" class="nav">about me</a>
+	<a href="{base}/contact" class="nav">contact</a>
 </div>
 
 <div>

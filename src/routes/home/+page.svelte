@@ -14,7 +14,6 @@
 	<div class="text-section">
 		<div class="name">TABEA KLEINE</div>
 		<div class="profession">Hebamme</div>
-		<img src="logo.svg" alt="logo" class="logo" />
 		<Quote text={quoteText} author={quoteAuthor} />
 		<div class="skills">Schwangerenvorsorge &#183; Wochenbettbetreuung</div>
 	</div>
@@ -68,13 +67,6 @@
 		font-family: Brittany Signature;
 		font-size: 2.3rem;
 		padding-top: 20px;
-	}
-
-	.logo {
-		width: 400px;
-		margin-top: 50px;
-		margin-left: 200px;
-		display: none;
 	}
 
 	.skills {

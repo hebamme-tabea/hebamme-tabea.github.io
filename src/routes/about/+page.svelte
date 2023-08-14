@@ -2,18 +2,25 @@
 	<img src="images/background.png" alt="background" class="bg-img" />
 </div>
 
-<div class="text-section">
-	Ich bin Tabea und 1993 in Heilbronn, Baden Württemberg geboren. Aufgewachsen bin ich in der Gegend
-	von Heidelberg und 2015 für die Hebammenausbildung nach Hamburg gezogen. Dabei hat mich besonders
-	die Veränderung des weiblichen Körpers während einer Schwangerschaft fasziniert und die enorme
-	Leistung die Frauen in der Schwangerschaft, unter der Geburt und im Wochenbett erbringen. Nach der
-	Ausbildung bin ich selbst schwanger geworden und litt dabei die kompletten 9 Monate an extremer
-	Schwangerschaftsübelkeit. Dadurch ist mein Respekt vor Frauen in der Schwangerschaft noch einmal
-	gestiegen. In meiner Arbeit möchte ich daher meine Aufmerksamkeit nicht nur auf das Wohlergehen
-	des Neugeborenen, sondern auch besonders auf das Wohlergehen der Mutter richten, denn eine
-	Entbindung gehört zu den bedeutendsten Initationen im Leben einer Frau. Denn wenn ein Kind geboren
-	wird, kommt auch eine Mutter zur Welt. Nach einem Jahr Elternzeit meines zweiten Kindes, steige
-	ich wieder in meinen Beruf ein.
+<div class="grid">
+	<img src="images/babyfeet.jpg" alt="babyfoot" class="babyfeet-img" />
+	<div class="text-section">
+		<div class="name">TABEA KLEINE</div>
+		<div class="profession">Hebamme</div>
+		<div class="text">
+			Ich bin Tabea und 1993 in Heilbronn, Baden Württemberg geboren. Aufgewachsen bin ich in der
+			Gegend von Heidelberg und 2015 für die Hebammenausbildung nach Hamburg gezogen. Dabei hat mich
+			besonders die Veränderung des weiblichen Körpers während einer Schwangerschaft fasziniert und
+			die enorme Leistung die Frauen in der Schwangerschaft, unter der Geburt und im Wochenbett
+			erbringen. Nach der Ausbildung bin ich selbst schwanger geworden und litt dabei die kompletten
+			9 Monate an extremer Schwangerschaftsübelkeit. Dadurch ist mein Respekt vor Frauen in der
+			Schwangerschaft noch einmal gestiegen. In meiner Arbeit möchte ich daher meine Aufmerksamkeit
+			nicht nur auf das Wohlergehen des Neugeborenen, sondern auch besonders auf das Wohlergehen der
+			Mutter richten, denn eine Entbindung gehört zu den bedeutendsten Initationen im Leben einer
+			Frau. Denn wenn ein Kind geboren wird, kommt auch eine Mutter zur Welt. Nach einem Jahr
+			Elternzeit meines zweiten Kindes, steige ich wieder in meinen Beruf ein.
+		</div>
+	</div>
 </div>
 
 <style>
@@ -38,10 +45,36 @@
 		min-height: 100%;
 	}
 
+	.grid {
+		display: grid;
+		grid-template-columns: 400px 1fr;
+		margin: 0 10%;
+		gap: 50px;
+	}
+
+	.babyfeet-img {
+		width: 100%;
+	}
+
 	.text-section {
-		margin-top: 50px;
-		margin-left: calc(400px + 10%);
-		margin-right: 200px;
+		width: 100%;
+		padding-top: 40px;
+		color: #444444;
+	}
+
+	.name {
+		font-size: 2rem;
+		letter-spacing: 0.3rem;
+	}
+
+	.profession {
+		font-family: Brittany Signature;
+		font-size: 2.3rem;
+		padding-top: 20px;
+	}
+
+	.text {
 		font-size: 1.2rem;
+		margin: 30px 0 0 70px;
 	}
 </style>

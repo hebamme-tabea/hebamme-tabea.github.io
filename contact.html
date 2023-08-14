@@ -6,22 +6,22 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="./app/immutable/assets/0.6d5abf82.css" rel="stylesheet">
-		<link rel="modulepreload" href="./app/immutable/entry/start.c90ae669.js">
-		<link rel="modulepreload" href="./app/immutable/chunks/scheduler.e108d1fd.js">
-		<link rel="modulepreload" href="./app/immutable/chunks/singletons.8d6ff59c.js">
+		<link href="./app/immutable/assets/0.90b4f7ef.css" rel="stylesheet">
+		<link rel="modulepreload" href="./app/immutable/entry/start.f3c8e984.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/scheduler.63274e7e.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/singletons.402164aa.js">
 		<link rel="modulepreload" href="./app/immutable/chunks/control.f5b05b5f.js">
-		<link rel="modulepreload" href="./app/immutable/entry/app.0bf8c18f.js">
-		<link rel="modulepreload" href="./app/immutable/chunks/index.5ae4157e.js">
-		<link rel="modulepreload" href="./app/immutable/nodes/0.27e5814f.js">
-		<link rel="modulepreload" href="./app/immutable/nodes/4.4d0dd6fd.js">
+		<link rel="modulepreload" href="./app/immutable/entry/app.fae1f60d.js">
+		<link rel="modulepreload" href="./app/immutable/chunks/index.29e8ea4d.js">
+		<link rel="modulepreload" href="./app/immutable/nodes/0.f9af638f.js">
+		<link rel="modulepreload" href="./app/immutable/nodes/4.9a09add7.js">
 	</head>
 	<body style="margin: 0">
-		<div>  <div class="header svelte-ls4ewo" data-svelte-h="svelte-1p1bx6c"><a href="home" class="svelte-ls4ewo"><img src="logo.svg" alt="logo" class="logo svelte-ls4ewo"></a> <div></div> <a href="home" class="nav svelte-ls4ewo">home</a> <a href="about" class="nav svelte-ls4ewo">about me</a> <a href="contact" class="nav svelte-ls4ewo">contact</a></div> <div><div data-svelte-h="svelte-186awge">contact</div> </div> 
+		<div class="content">  <div class="header svelte-1aawp3k" data-svelte-h="svelte-1wt82l5"><a href="home" class="svelte-1aawp3k"><img src="logo.svg" alt="logo" class="logo svelte-1aawp3k"></a> <div></div> <a href="home" class="nav svelte-1aawp3k">Home</a> <a href="about" class="nav svelte-1aawp3k">Über Mich</a> <a href="contact" class="nav svelte-1aawp3k">Kontakt</a></div> <div><div data-svelte-h="svelte-186awge">contact</div></div> <div class="footer svelte-1aawp3k" data-svelte-h="svelte-1jd8wtb"><div class="title svelte-1aawp3k">Hebamme Tabea Kleine, 23730 Neustadt in Holstein</div> </div> 
 			
 			<script>
 				{
-					__sveltekit_1rek1c = {
+					__sveltekit_c80wpd = {
 						assets: "/hebamme-tabea.github.io",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -32,8 +32,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./app/immutable/entry/start.c90ae669.js"),
-						import("./app/immutable/entry/app.0bf8c18f.js")
+						import("./app/immutable/entry/start.f3c8e984.js"),
+						import("./app/immutable/entry/app.fae1f60d.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
@@ -55,7 +55,13 @@
 	}
 
 	body {
+		position: relative;
 		font-family: 'EB Garamond', serif;
 		color: #444444;
+	}
+
+	.content {
+		position: relative;
+		overflow: hidden;
 	}
 </style>

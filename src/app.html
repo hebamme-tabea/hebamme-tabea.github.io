@@ -8,7 +8,7 @@
 		%sveltekit.head%
 	</head>
 	<body style="margin: 0">
-		<div>%sveltekit.body%</div>
+		<div class="content">%sveltekit.body%</div>
 	</body>
 </html>
 
@@ -19,7 +19,13 @@
 	}
 
 	body {
+		position: relative;
 		font-family: 'EB Garamond', serif;
 		color: #444444;
+	}
+
+	.content {
+		position: relative;
+		overflow: hidden;
 	}
 </style>

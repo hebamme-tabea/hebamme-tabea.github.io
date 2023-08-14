@@ -3,13 +3,17 @@
 		<img src="logo.svg" alt="logo" class="logo" />
 	</a>
 	<div />
-	<a href="home" class="nav">home</a>
-	<a href="about" class="nav">about me</a>
-	<a href="contact" class="nav">contact</a>
+	<a href="home" class="nav">Home</a>
+	<a href="about" class="nav">Über Mich</a>
+	<a href="contact" class="nav">Kontakt</a>
 </div>
 
 <div>
 	<slot />
+</div>
+
+<div class="footer">
+	<div class="title">Hebamme Tabea Kleine, 23730 Neustadt in Holstein</div>
 </div>
 
 <style>
@@ -74,5 +78,19 @@
 
 	.nav:hover {
 		color: black;
+	}
+
+	.footer {
+		margin-top: 80px;
+		height: 100px;
+		background-color: #444444;
+		display: grid;
+		align-items: center;
+	}
+
+	.title {
+		color: white;
+		letter-spacing: 0.1rem;
+		text-align: center;
 	}
 </style>

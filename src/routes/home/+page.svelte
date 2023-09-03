@@ -10,7 +10,7 @@
 	<img src="images/background.png" alt="background" class="bg-img" />
 </div>
 <div class="grid">
-	<img src="images/profilbild.jpeg" alt="profile" class="profile-img" />
+	<img src="images/profilbild.jpg" alt="profile" class="profile-img" />
 	<div class="text-section">
 		<div class="name">TABEA KLEINE</div>
 		<div class="profession">Hebamme</div>

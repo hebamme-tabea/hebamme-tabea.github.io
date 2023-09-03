@@ -43,10 +43,6 @@
 		gap: 50px;
 	}
 
-	.babyfeet-img {
-		width: 100%;
-	}
-
 	.text-section {
 		width: 100%;
 		padding-top: 40px;

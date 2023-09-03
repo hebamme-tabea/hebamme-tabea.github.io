@@ -11,12 +11,6 @@
 	title="Hebamme Tabea Kleine"
 	description="Kompetente Schwangerenvorsorge und Wochenbettbetreuung in Neustadt in Holstein mit eigener Erfahrung mit extremer Schwangerschaftsübelkeit."
 	canonical="https://hebamme-tabea.github.io/home"
-	additionalMetaTags={[
-		{
-			httpEquiv: 'refresh',
-			content: '0; URL=https://hebamme-tabea.github.io/home'
-		}
-	]}
 />
 <div class="grey-box">
 	<img src="images/background.png" alt="background" class="bg-img" />

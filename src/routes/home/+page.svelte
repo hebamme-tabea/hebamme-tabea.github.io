@@ -1,19 +1,31 @@
 <script lang="ts">
 	import Quote from '$lib/general/Quote.svelte';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	const quoteText =
 		'In dem Moment, in dem ein Kind geboren wird, wird auch eine Mutter geboren. Die Frau hat vorher schon existiert, jedoch nicht als Mutter. Das Mutter-Sein ist etwas völlig Neues.';
 	const quoteAuthor = '- Bhagwan Shree Rajneesh';
 </script>
 
+<MetaTags
+	title="Hebamme Tabea Kleine"
+	description="Kompetente Schwangerenvorsorge und Wochenbettbetreuung in Neustadt in Holstein mit eigener Erfahrung mit extremer Schwangerschaftsübelkeit."
+	canonical="https://hebamme-tabea.github.io/home"
+	additionalMetaTags={[
+		{
+			httpEquiv: 'refresh',
+			content: '0; URL=https://hebamme-tabea.github.io/home'
+		}
+	]}
+/>
 <div class="grey-box">
 	<img src="images/background.png" alt="background" class="bg-img" />
 </div>
 <div class="grid">
 	<img src="images/profilbild.jpg" alt="profile" class="profile-img" />
 	<div class="text-section">
-		<div class="name">TABEA KLEINE</div>
-		<div class="profession">Hebamme</div>
+		<h1 class="name">TABEA KLEINE</h1>
+		<h2 class="profession">Hebamme</h2>
 		<Quote text={quoteText} author={quoteAuthor} />
 		<div class="skills">Schwangerenvorsorge &#183; Wochenbettbetreuung</div>
 	</div>

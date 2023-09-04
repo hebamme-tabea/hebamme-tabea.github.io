@@ -1,6 +1,6 @@
 <div class="header">
 	<a href="home">
-		<img src="logo.svg" alt="logo" class="logo" />
+		<img src="images/logo.svg" alt="logo" class="logo" />
 	</a>
 	<div />
 	<a href="home" class="nav">Home</a>
@@ -27,7 +27,7 @@
 	}
 
 	.logo {
-		height: 60px;
+		height: 55px;
 	}
 
 	a {

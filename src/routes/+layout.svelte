@@ -147,6 +147,12 @@
 		height: 38px;
 		cursor: pointer;
 		z-index: 4;
+		padding: 0;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	.menu:focus-visible {
+		outline: none;
 	}
 
 	.line {

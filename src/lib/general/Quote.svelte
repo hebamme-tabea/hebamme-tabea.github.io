@@ -14,6 +14,8 @@
 		margin: 20px 0;
 		position: relative;
 		width: 800px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.quote-background {

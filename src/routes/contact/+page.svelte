@@ -71,4 +71,55 @@
 		text-decoration: none;
 		color: inherit;
 	}
+
+	@media only screen and (max-width: 1000px) {
+		.grey-box {
+			width: 30vw;
+			height: 50vw;
+			min-height: 0;
+		}
+
+		.grey-box:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: linear-gradient(
+				to bottom,
+				rgba(255, 255, 255, 0) 20%,
+				rgba(255, 255, 255, 1) 100%
+			);
+			height: 40%;
+		}
+
+		.grid {
+			grid-template-columns: 30vw 1fr;
+		}
+
+		.text {
+			margin-bottom: 80px;
+		}
+	}
+
+	@media only screen and (max-width: 850px) {
+		.grey-box {
+			display: none;
+		}
+
+		.grid {
+			grid-template-columns: 1fr;
+		}
+
+		.text-section {
+			padding-top: 0;
+		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		.text {
+			margin-left: 0;
+			margin-top: 60px;
+		}
+	}
 </style>

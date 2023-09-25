@@ -173,13 +173,13 @@
 		}
 
 		.quote :global(.quote-body) {
-			font-size: 2.2vw;
+			font-size: 1.3rem;
 			width: 50%;
 			left: 26%;
 		}
 
 		.quote :global(.quote-author) {
-			font-size: 2.2vw;
+			font-size: 1.3rem;
 		}
 	}
 
@@ -216,6 +216,20 @@
 			width: 140%;
 			margin-left: 0;
 		}
+
+		.quote :global(.quote-body) {
+			font-size: 1.1rem;
+		}
+
+		.quote :global(.quote-author) {
+			font-size: 1.1rem;
+		}
+	}
+
+	@media only screen and (max-width: 700px) {
+		.quote :global(.quote) {
+			width: 170%;
+		}
 	}
 
 	@media only screen and (max-width: 500px) {
@@ -224,20 +238,20 @@
 		}
 
 		.text-section {
-			padding: 0 60px;
+			padding: 0;
 		}
 
 		.quote :global(.quote) {
-			width: 120%;
+			width: 160%;
 			margin-left: 0;
 		}
 
 		.quote :global(.quote-body) {
-			font-size: 2.8vw;
+			font-size: 1rem;
 		}
 
 		.quote :global(.quote-author) {
-			font-size: 2.8vw;
+			font-size: 1rem;
 		}
 	}
 

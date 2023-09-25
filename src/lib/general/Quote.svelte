@@ -25,7 +25,8 @@
 	.quote-body {
 		position: absolute;
 		font-size: 1.3rem;
-		top: 28%;
+		top: 45%;
+		transform: translateY(-50%);
 		text-align: center;
 		width: 47%;
 		left: 28%;

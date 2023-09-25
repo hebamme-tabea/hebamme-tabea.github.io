@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
+
 	let innerWidth = 0;
 
 	const navItems = [
@@ -16,7 +19,7 @@
 		}
 	];
 
-	let responsiveMenu = false;
+	$: responsiveMenu = false;
 
 	function toggleResponsiveMenu() {
 		responsiveMenu = !responsiveMenu;
@@ -30,7 +33,7 @@
 		<img src="images/logo.svg" alt="logo" class="logo" />
 	</a>
 	<div />
-	{#if innerWidth >= 850}
+	{#if innerWidth > 850}
 		{#each navItems as item}
 			<a href={item.href} class="nav">{item.name}</a>
 		{/each}
@@ -39,10 +42,20 @@
 			<div class="line line-upper" class:line-upper-cross={responsiveMenu} />
 			<div class="line line-lower" class:line-lower-cross={responsiveMenu} />
 		</button>
+		{#if responsiveMenu}
+			<div
+				class="mobile-menu-container"
+				transition:slide={{ duration: 400, easing: quintOut, axis: 'y' }}
+			>
+				{#each navItems as item}
+					<a href={item.href} class="nav" on:click={() => (responsiveMenu = false)}>{item.name}</a>
+				{/each}
+			</div>
+		{/if}
 	{/if}
 </div>
 
-<div>
+<div on:click={() => (responsiveMenu = false)} aria-hidden="true">
 	<slot />
 </div>
 
@@ -133,6 +146,7 @@
 		width: 40px;
 		height: 38px;
 		cursor: pointer;
+		z-index: 4;
 	}
 
 	.line {
@@ -163,6 +177,23 @@
 		transform: rotate(-45deg);
 	}
 
+	.mobile-menu-container {
+		display: grid;
+		grid-template-columns: max-content;
+		justify-content: center;
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+		padding-top: 80px;
+		padding-bottom: 40px;
+		text-align: center;
+		background-color: white;
+		box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+		row-gap: 10px;
+		z-index: 3;
+	}
+
 	@media only screen and (max-width: 1000px) {
 		.footer {
 			margin-top: 0;
@@ -178,6 +209,11 @@
 	@media only screen and (max-width: 500px) {
 		.logo {
 			display: none;
+		}
+
+		.mobile-menu-container {
+			padding-top: 100px;
+			row-gap: 20px;
 		}
 	}
 </style>

@@ -5,8 +5,8 @@
 <div class="grid">
 	<div />
 	<div class="text-section">
-		<div class="name">TABEA KLEINE</div>
-		<div class="profession">Hebamme</div>
+		<h1 class="name">TABEA KLEINE</h1>
+		<h2 class="profession">Hebamme</h2>
 		<div class="text">
 			<a href="mailto:hebamme.tabea@gmail.com">hebamme.tabea@gmail.com</a><br />
 			04561 5288391
@@ -45,7 +45,6 @@
 
 	.text-section {
 		width: 100%;
-		padding-top: 40px;
 		color: #444444;
 	}
 
@@ -116,7 +115,7 @@
 		}
 	}
 
-	@media only screen and (max-width: 500px) {
+	@media only screen and (max-width: 600px) {
 		.text {
 			margin-left: 0;
 			margin-top: 60px;

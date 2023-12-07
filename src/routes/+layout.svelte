@@ -192,7 +192,7 @@
 		left: 0;
 		top: 0;
 		padding-top: 80px;
-		padding-bottom: 40px;
+		padding-bottom: 48px;
 		text-align: center;
 		background-color: white;
 		box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
@@ -212,7 +212,7 @@
 		}
 	}
 
-	@media only screen and (max-width: 500px) {
+	@media only screen and (max-width: 600px) {
 		.logo {
 			display: none;
 		}

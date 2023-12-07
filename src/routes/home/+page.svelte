@@ -68,7 +68,6 @@
 
 	.text-section {
 		width: 100%;
-		padding-top: 40px;
 		color: #444444;
 		grid-area: title;
 	}
@@ -229,6 +228,34 @@
 	@media only screen and (max-width: 700px) {
 		.quote :global(.quote) {
 			width: 170%;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.grid {
+			margin: 0;
+		}
+
+		.text-section {
+			padding: 0;
+			margin: 0 40px;
+		}
+
+		.quote {
+			margin: 0 40px;
+		}
+
+		.quote :global(.quote) {
+			width: 160%;
+			margin-left: 0;
+		}
+
+		.quote :global(.quote-body) {
+			font-size: 1rem;
+		}
+
+		.quote :global(.quote-author) {
+			font-size: 1rem;
 		}
 	}
 

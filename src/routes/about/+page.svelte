@@ -153,9 +153,18 @@
 		}
 	}
 
-	@media only screen and (max-width: 500px) {
+	@media only screen and (max-width: 600px) {
 		.grid {
-			margin: 0 5%;
+			margin: 0;
+		}
+
+		.title {
+			margin: 0 40px;
+		}
+
+		.text {
+			margin-left: 40px;
+			margin-right: 40px;
 		}
 	}
 </style>

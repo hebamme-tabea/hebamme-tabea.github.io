@@ -259,32 +259,9 @@
 		}
 	}
 
-	@media only screen and (max-width: 500px) {
-		.grid {
-			margin: 0 5%;
-		}
-
-		.text-section {
-			padding: 0;
-		}
-
-		.quote :global(.quote) {
-			width: 160%;
-			margin-left: 0;
-		}
-
-		.quote :global(.quote-body) {
-			font-size: 1rem;
-		}
-
-		.quote :global(.quote-author) {
-			font-size: 1rem;
-		}
-	}
-
 	@media only screen and (max-width: 400px) {
-		.text-section {
-			padding: 0 20px;
+		.quote {
+			margin: 0 15px 0 10px;
 		}
 	}
 </style>

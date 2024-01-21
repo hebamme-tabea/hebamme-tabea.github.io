@@ -9,7 +9,7 @@
 		<h2 class="profession">Hebamme</h2>
 		<div class="text">
 			<a href="mailto:hebamme.tabea@gmail.com">hebamme.tabea@gmail.com</a><br />
-			04561 5288391
+			+49 152 02740874
 		</div>
 	</div>
 </div>

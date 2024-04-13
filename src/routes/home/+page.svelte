@@ -64,11 +64,12 @@
 		width: 100%;
 		grid-area: image;
 		z-index: 2;
+		border-radius: var(--border-radius);
 	}
 
 	.text-section {
 		width: 100%;
-		color: #444444;
+		color: var(--color-grey-100);
 		grid-area: title;
 	}
 
@@ -79,7 +80,7 @@
 	}
 
 	.profession {
-		font-family: Brittany Signature;
+		font-family: var(--font-brittany);
 		font-size: 2.3rem;
 		padding-top: 20px;
 	}

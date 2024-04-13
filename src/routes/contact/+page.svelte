@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Button from '$lib/general/Button.svelte';
+</script>
+
 <div class="grey-box">
 	<img src="images/background.png" alt="background" class="bg-img" />
 </div>
@@ -10,6 +14,9 @@
 		<div class="text">
 			<a href="mailto:hebamme.tabea@gmail.com">hebamme.tabea@gmail.com</a><br />
 			+49 152 02740874
+		</div>
+		<div class="button-wrapper">
+			<Button href="https://kleine.hebamio.de/" target="_blank">Anmeldung zur Betreuung</Button>
 		</div>
 	</div>
 </div>
@@ -69,6 +76,10 @@
 	a {
 		text-decoration: none;
 		color: inherit;
+	}
+
+	.button-wrapper {
+		margin: 40px 0 0 150px;
 	}
 
 	@media only screen and (max-width: 1000px) {

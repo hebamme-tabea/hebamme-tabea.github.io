@@ -26,7 +26,7 @@
 <style>
 	.grey-box {
 		position: absolute;
-		background-color: #ece5e4;
+		background-color: var(--color-grey-25);
 		left: 0;
 		top: 0;
 		width: calc(300px + 10%);
@@ -53,12 +53,13 @@
 		grid-template-columns: 400px 1fr;
 		margin: 0 10%;
 		column-gap: 50px;
-		color: #444444;
+		color: var(--color-grey-100);
 	}
 
 	.babyfeet-img {
 		width: 100%;
 		grid-area: image;
+		border-radius: var(--border-radius);
 	}
 
 	.title {
@@ -71,7 +72,7 @@
 	}
 
 	.profession {
-		font-family: Brittany Signature;
+		font-family: var(--font-brittany);
 		font-size: 2.3rem;
 		padding-top: 20px;
 	}

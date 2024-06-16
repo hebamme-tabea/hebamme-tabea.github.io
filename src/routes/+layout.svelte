@@ -60,7 +60,7 @@
 </div>
 
 <div class="footer">
-	<div class="title">Hebamme Tabea Kleine, 23730 Neustadt in Holstein</div>
+	<div class="title">Hebamme Tabea Kleine, 24214 Gettorf</div>
 </div>
 
 <style>

@@ -15,9 +15,9 @@
 			<a href="mailto:hebamme.tabea@gmail.com">hebamme.tabea@gmail.com</a><br />
 			+49 152 02740874
 		</div>
-		<div class="button-wrapper">
+		<!-- <div class="button-wrapper">
 			<Button href="https://kleine.hebamio.de/" target="_blank">Anmeldung zur Betreuung</Button>
-		</div>
+		</div> -->
 	</div>
 </div>
 

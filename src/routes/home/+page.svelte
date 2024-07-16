@@ -8,9 +8,10 @@
 </script>
 
 <MetaTags
-	title="Hebamme Tabea Kleine"
-	description="Kompetente Schwangerenvorsorge und Wochenbettbetreuung in Neustadt in Holstein mit eigener Erfahrung mit extremer Schwangerschaftsübelkeit."
-	canonical="https://hebamme-tabea.github.io/home"
+	title="Hebamme Tabea Kleine in Gettorf, Kiel und Eckernförde"
+	description="Kompetente Schwangerenvorsorge und Wochenbettbetreuung mit eigener Erfahrung bezüglich extremer Schwangerschaftsübelkeit."
+	canonical="https://kleine-hebamme.de/home"
+	robots="index,follow"
 />
 <div class="grey-box">
 	<img src="images/background.png" alt="background" class="bg-img" />
@@ -24,7 +25,7 @@
 	<div class="quote">
 		<Quote text={quoteText} author={quoteAuthor} />
 	</div>
-	<div class="skills">Schwangerenvorsorge &#183; Wochenbettbetreuung</div>
+	<h3 class="skills">Schwangerenvorsorge &#183; Wochenbettbetreuung</h3>
 </div>
 
 <style>

@@ -60,7 +60,7 @@
 </div>
 
 <div class="footer">
-	<div class="title">Hebamme Tabea Kleine, 24214 Gettorf</div>
+	<h4 class="title">Hebamme Tabea Kleine, 24214 Gettorf</h4>
 </div>
 
 <style>

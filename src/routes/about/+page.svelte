@@ -167,5 +167,9 @@
 			margin-left: 40px;
 			margin-right: 40px;
 		}
+
+		.babyfeet-img {
+			border-radius: 0;
+		}
 	}
 </style>

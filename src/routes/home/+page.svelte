@@ -9,7 +9,7 @@
 
 <MetaTags
 	title="Hebamme Tabea Kleine in Gettorf, Kiel und Eckernförde"
-	description="Kompetente Schwangerenvorsorge und Wochenbettbetreuung mit eigener Erfahrung bezüglich extremer Schwangerschaftsübelkeit."
+	description="Kompetente Schwangerenvorsorge und Wochenbettbetreuung mit Schwerpunkt auf das Wohlergehen der Mutter und persönlicher Erfahrung bezüglich intensiver Schwangerschaftsübelkeit."
 	canonical="https://kleine-hebamme.de/home"
 	robots="index,follow"
 />
@@ -234,6 +234,10 @@
 	}
 
 	@media only screen and (max-width: 600px) {
+		.profile-img {
+			border-radius: 0;
+		}
+
 		.grid {
 			margin: 0;
 		}

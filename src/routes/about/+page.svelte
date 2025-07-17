@@ -1,9 +1,9 @@
-<div class="grey-box">
-	<img src="images/background.png" alt="background" class="bg-img" />
-</div>
+<script lang="ts">
+	import profilePicture from '$lib/assets/profilbild.jpg';
+</script>
 
 <div class="grid">
-	<img src="images/babyfeet.jpg" alt="babyfoot" class="babyfeet-img" />
+	<img src={profilePicture} alt="babyfoot" class="babyfeet-img" />
 	<div class="title">
 		<h1 class="name">TABEA KLEINE</h1>
 		<h2 class="profession">Hebamme</h2>
@@ -18,33 +18,11 @@
 		Schwangerschaft noch einmal gestiegen. In meiner Arbeit möchte ich daher meine Aufmerksamkeit
 		nicht nur auf das Wohlergehen des Neugeborenen, sondern auch besonders auf das Wohlergehen der
 		Mutter richten, denn eine Entbindung gehört zu den bedeutendsten Initationen im Leben einer
-		Frau. Denn wenn ein Kind geboren wird, kommt auch eine Mutter zur Welt. Nach einem Jahr
-		Elternzeit meines zweiten Kindes, steige ich wieder in meinen Beruf ein.
+		Frau. Denn wenn ein Kind geboren wird, kommt auch eine Mutter zur Welt.
 	</div>
 </div>
 
 <style>
-	.grey-box {
-		position: absolute;
-		background-color: var(--color-grey-25);
-		left: 0;
-		top: 0;
-		width: calc(300px + 10%);
-		height: 840px;
-		min-height: 100%;
-		z-index: -1;
-		overflow: hidden;
-	}
-
-	.bg-img {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		min-height: 100%;
-	}
-
 	.grid {
 		display: grid;
 		grid-template-areas:
@@ -90,26 +68,6 @@
 	}
 
 	@media only screen and (max-width: 1000px) {
-		.grey-box {
-			width: 30vw;
-			height: 50vw;
-			min-height: 0;
-		}
-
-		.grey-box:after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: linear-gradient(
-				to bottom,
-				rgba(255, 255, 255, 0) 20%,
-				rgba(255, 255, 255, 1) 100%
-			);
-			height: 40%;
-		}
-
 		.grid {
 			grid-template-columns: 1fr 1fr;
 
@@ -130,10 +88,6 @@
 	}
 
 	@media only screen and (max-width: 850px) {
-		.grey-box {
-			display: none;
-		}
-
 		.grid {
 			grid-template-areas:
 				'title'

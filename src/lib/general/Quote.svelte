@@ -1,10 +1,11 @@
 <script lang="ts">
 	export let text: string | undefined = undefined;
 	export let author: string | undefined = undefined;
+	import quoteBackground from '$lib/assets/quote-bg.png';
 </script>
 
 <div class="quote">
-	<img src="images/quote-bg.png" alt="quote" class="quote-background" />
+	<img src={quoteBackground} alt="quote" class="quote-background" />
 	<div class="quote-body">{text}</div>
 	<div class="quote-author">{author}</div>
 </div>

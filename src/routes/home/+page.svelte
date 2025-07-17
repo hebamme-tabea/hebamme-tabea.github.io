@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Quote from '$lib/general/Quote.svelte';
 	import { MetaTags } from 'svelte-meta-tags';
+	import profilePicture from '$lib/assets/profilbild.jpg';
 
 	const quoteText =
 		'In dem Moment, in dem ein Kind geboren wird, wird auch eine Mutter geboren. Die Frau hat vorher schon existiert, jedoch nicht als Mutter. Das Mutter-Sein ist etwas völlig Neues.';
@@ -13,11 +14,8 @@
 	canonical="https://kleine-hebamme.de/home"
 	robots="index,follow"
 />
-<div class="grey-box">
-	<img src="images/background.png" alt="background" class="bg-img" />
-</div>
 <div class="grid">
-	<img src="images/profilbild.jpg" alt="profile" class="profile-img" />
+	<img src={profilePicture} alt="profile" class="profile-img" />
 	<div class="text-section">
 		<h1 class="name">TABEA KLEINE</h1>
 		<h2 class="profession">Hebamme</h2>
@@ -29,27 +27,6 @@
 </div>
 
 <style>
-	.grey-box {
-		position: absolute;
-		background-color: #ece5e4;
-		left: 0;
-		top: 0;
-		width: calc(300px + 10%);
-		height: 840px;
-		min-height: 100%;
-		z-index: -1;
-		overflow: hidden;
-	}
-
-	.bg-img {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		min-height: 100%;
-	}
-
 	.grid {
 		display: grid;
 		grid-template-areas:
@@ -129,26 +106,6 @@
 	}
 
 	@media only screen and (max-width: 1000px) {
-		.grey-box {
-			width: 30vw;
-			height: 50vw;
-			min-height: 0;
-		}
-
-		.grey-box:after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: linear-gradient(
-				to bottom,
-				rgba(255, 255, 255, 0) 20%,
-				rgba(255, 255, 255, 1) 100%
-			);
-			height: 40%;
-		}
-
 		.grid {
 			grid-template-areas:
 				'image title'
@@ -185,9 +142,6 @@
 	}
 
 	@media only screen and (max-width: 850px) {
-		.grey-box {
-			display: none;
-		}
 		.grid {
 			grid-template-areas:
 				'title'

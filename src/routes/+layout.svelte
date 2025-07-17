@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import backgroundImage from '$lib/assets/background.png';
+	import logo from '$lib/assets/logo.svg';
 
 	let innerWidth = 0;
 
@@ -14,10 +16,16 @@
 			href: 'about'
 		},
 		{
+			name: 'Leistungen',
+			href: 'services'
+		},
+		{
 			name: 'Kontakt',
 			href: 'contact'
 		}
 	];
+
+	let active = navItems[0].name;
 
 	$: responsiveMenu = false;
 
@@ -28,15 +36,24 @@
 
 <svelte:window bind:innerWidth />
 
+<div class="grey-box">
+	<img src={backgroundImage} alt="background" class="bg-img" />
+</div>
 <div class="header">
 	<a href="home">
-		<img src="images/logo.svg" alt="logo" class="logo" />
+		<img src={logo} alt="logo" class="logo" />
 	</a>
-	<div />
 	{#if innerWidth > 850}
-		{#each navItems as item}
-			<a href={item.href} class="nav">{item.name}</a>
-		{/each}
+		<div class="navbar">
+			{#each navItems as item}
+				<a
+					href={item.href}
+					class="nav"
+					class:active={item.name === active}
+					on:click={() => (active = item.name)}>{item.name}</a
+				>
+			{/each}
+		</div>
 	{:else}
 		<button class="menu" on:click={toggleResponsiveMenu}>
 			<div class="line line-upper" class:line-upper-cross={responsiveMenu} />
@@ -48,7 +65,15 @@
 				transition:slide={{ duration: 400, easing: quintOut, axis: 'y' }}
 			>
 				{#each navItems as item}
-					<a href={item.href} class="nav" on:click={() => (responsiveMenu = false)}>{item.name}</a>
+					<a
+						href={item.href}
+						class="nav"
+						class:active={active === item.name}
+						on:click={() => {
+							responsiveMenu = false;
+							active = item.name;
+						}}>{item.name}</a
+					>
 				{/each}
 			</div>
 		{/if}
@@ -64,13 +89,56 @@
 </div>
 
 <style>
+	.grey-box {
+		position: absolute;
+		background-color: #ece5e4;
+		left: 0;
+		top: 0;
+		width: calc(300px + 10%);
+		height: 840px;
+		min-height: 100%;
+		z-index: -1;
+		overflow: hidden;
+	}
+
+	.bg-img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		min-height: 100%;
+	}
+
+	.grey-box {
+		width: 30vw;
+		height: 50vw;
+		min-height: 0;
+	}
+
+	.grey-box:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 100%);
+		height: 40%;
+	}
+
 	.header {
-		display: grid;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		height: 120px;
-		grid-template-columns: max-content auto repeat(3, max-content);
 		align-items: center;
-		gap: 60px;
 		padding: 0 60px 0 30px;
+	}
+
+	.navbar {
+		display: flex;
+		flex-direction: row;
+		gap: 60px;
 	}
 
 	.logo {
@@ -87,6 +155,7 @@
 		padding: 0.4rem 1rem;
 		position: relative;
 		font-size: 20px;
+		color: var(--color-grey-50);
 	}
 
 	.nav::before,
@@ -192,7 +261,7 @@
 		left: 0;
 		top: 0;
 		padding-top: 80px;
-		padding-bottom: 48px;
+		padding-bottom: 38px;
 		text-align: center;
 		background-color: white;
 		box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
@@ -200,13 +269,24 @@
 		z-index: 3;
 	}
 
+	.active {
+		color: black;
+	}
+
 	@media only screen and (max-width: 1000px) {
 		.footer {
 			margin-top: 0;
 		}
+		.navbar {
+			gap: 20px;
+		}
 	}
 
 	@media only screen and (max-width: 850px) {
+		.grey-box {
+			display: none;
+		}
+
 		.header {
 			grid-template-columns: max-content auto max-content;
 		}

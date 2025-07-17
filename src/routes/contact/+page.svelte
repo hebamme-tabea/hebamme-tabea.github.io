@@ -10,11 +10,10 @@
 		<div class="text">
 			<a href="mailto:hebamme.tabea@gmail.com">hebamme.tabea@gmail.com</a><br />
 			+49 152 02740874
-			<div class="note">(auch gerne per WhatsApp)</div>
 		</div>
 		<div class="button-wrapper">
 			<Button href="https://kleine.hebamio.de/anmeldung" target="_blank">Link zur Anmeldung</Button>
-			<div class="note hebamio">
+			<div class="note">
 				(du wirst zu <a href="https://www.hebamio.de/" target="_blank">Hebamio</a> weitergeleitet)
 			</div>
 		</div>
@@ -65,13 +64,10 @@
 		font-style: normal;
 		font-size: 1.3rem;
 		margin-bottom: 40px;
-	}
-
-	.hebamio {
 		margin-top: 10px;
 	}
 
-	.hebamio > a {
+	.note > a {
 		text-decoration: underline;
 	}
 
